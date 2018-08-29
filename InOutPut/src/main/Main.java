@@ -1,9 +1,6 @@
 package main;
 
-import chapter.ChapterFifth;
-import chapter.ChapterForth;
-import chapter.ChapterSixth;
-import chapter.ChapterThird;
+import chapter.*;
 
 public class Main{
 
@@ -18,8 +15,11 @@ public class Main{
 //        ChapterFifth fifth = new ChapterFifth();
 //        fifth.useFunction();
 
-        ChapterSixth sixth = new ChapterSixth();
-        sixth.useFunction();
+//        ChapterSixth sixth = new ChapterSixth();
+//        sixth.useFunction();
+
+        ChapterSeven seven = new ChapterSeven();
+        seven.useFunction();
 
     }
 
