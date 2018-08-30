@@ -1,23 +1,14 @@
-package chapter;/*
- * ------------------------------------------------------------------
- * Copyright © 2018 DtDream Scien ce and Technology Co.,Ltd. All rights reserved.
- * ------------------------------------------------------------------
- *       Product: ASR
- *   Module Name: web
- *  Date Created: 2018-06-09
- *   Description:
- * ------------------------------------------------------------------
- * Modification History
- * DATE            Name           Description
- * ------------------------------------------------------------------
- * 2018-06-09      sx-9524
- * ------------------------------------------------------------------
- */
+package chapter;
 
+import someClass.ImageViewerFrame;
+import someClass.WindowsHandler;
+
+import javax.swing.*;
+import java.awt.*;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Scanner;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+import java.util.logging.*;
 
 public class ChapterSeven {
     public void useFunction() {
@@ -25,6 +16,7 @@ public class ChapterSeven {
 //        useAssert();
         try{
             useLog();
+//            useHandler();
         }catch (IOException e){
             myLogger.info("useFunction.log.throw");
         }
@@ -83,5 +75,48 @@ public class ChapterSeven {
         myLogger.throwing("com.me.demo.InOutPut", "throw", exception);
         throw exception;
 
+        if (null == System.getProperty("java.util.logging.config.class")
+                && null == System.getProperty("java.util.logging.config.file")){
+            try{
+                Logger.getLogger("com.me.demo").setLevel(Level.ALL);
+                final int LOG_ROTATION_COUNT = 10;
+                Handler handler = new FileHandler("%h/myapp.log", 0 ,LOG_ROTATION_COUNT);
+                Logger.getLogger("").addHandler(handler);
+            }
+            catch (IOException e){
+                Logger.getLogger("com.me.demo").log(Level.SEVERE, "Can't create log file handler", e);
+            }
+        }
+
+        EventQueue.invokeLater(() ->{
+            Handler windowHandler = new WindowsHandler();
+            windowHandler.setLevel(Level.ALL);
+            Logger.getLogger("com.me.demo").addHandler(windowHandler);
+
+            JFrame frame = new ImageViewerFrame();
+            frame.setTitle("LoggingImageViewer");
+            frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+            Logger.getLogger("com.me.demo").fine("Show frame");
+            frame.setVisible(true);
+        });
+
+    }
+
+    public void useHandler()throws FileNotFoundException {
+        Logger logger = Logger.getLogger("com.me.demo");
+        logger.setLevel(Level.FINE);
+        logger.setUseParentHandlers(false);
+        Handler handler = new ConsoleHandler();
+        handler.setLevel(Level.FINE);
+        logger.addHandler(handler);
+
+        try {
+            FileHandler fileHandler = new FileHandler();
+            logger.addHandler(fileHandler);
+        }
+        catch(Exception e){
+
+        }
     }
 }
