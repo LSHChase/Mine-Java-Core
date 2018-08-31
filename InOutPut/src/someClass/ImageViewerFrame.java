@@ -1,6 +1,8 @@
 package someClass;
 
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.logging.Logger;
 
 public class ImageViewerFrame extends JFrame {
@@ -20,6 +22,22 @@ public class ImageViewerFrame extends JFrame {
         JMenu menu = new JMenu("file");
         menuBar.add(menu);
 
+        JMenuItem openItem = new JMenuItem("open");
+        menu.add(openItem);
+        openItem.addActionListener(new FileOpenListener());
 
+        JMenuItem exitItem = new JMenuItem("exit");
+        menu.add(exitItem);
+        exitItem.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                logger.fine("Exiting.");
+                System.exit(0);
+            }
+        });
+
+        label = new JLabel();
+        add(label);
+        logger.exiting("ImageViewerFrame", "<init>");
     }
 }
