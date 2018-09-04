@@ -22,7 +22,7 @@ build/
 *.iml
 *.ipr
 *.iws
-.idea/
+#.idea/
 
 #gradle
 .gradle/
