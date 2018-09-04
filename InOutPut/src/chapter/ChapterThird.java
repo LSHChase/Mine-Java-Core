@@ -66,10 +66,10 @@ public class ChapterThird extends IOException{
 
         //Get user_name and password from a ui
         Console cons =System.console();
-        String user_name = cons.readLine("User name:");
+        String userName = cons.readLine("User name:");
         char[] password = cons.readPassword("Password:");
 
-        System.out.println("User name: "+user_name+"\n"+"Password: "+password);
+        System.out.println("User name: "+userName+"\n"+"Password: "+password);
     }
 
     //Input from file

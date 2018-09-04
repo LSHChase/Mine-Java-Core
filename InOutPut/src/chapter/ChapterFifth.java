@@ -1,7 +1,7 @@
 package chapter;
 
-import E_enum.Size;
-import abstractClasses.Person;
+import e_enum.Size;
+import abstractclas.AbstractPerson;
 import office.*;
 import reflection.ReflectionTest;
 import schools.Student;
@@ -42,11 +42,11 @@ public class ChapterFifth {
             Manager bos = (Manager) staff[1];
         }
 
-        Person[] people = new Person[2];
+        AbstractPerson[] people = new AbstractPerson[2];
         people[0] = new Employee("张三",10000,2000,2,4);
         people[1] = new Student("李四","Computer Tester");
 
-        for (Person p : people)
+        for (AbstractPerson p : people)
             System.out.println(p.getName() + ", " + p.getDescription());
     }
 

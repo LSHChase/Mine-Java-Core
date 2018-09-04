@@ -1,13 +1,13 @@
 package schools;
 
-import abstractClasses.Person;
+import abstractclas.AbstractPerson;
 
-public class Student extends Person {
+public class Student extends AbstractPerson {
 
     private String major;
 
     /**
-     * @param name Person's name
+     * @param name AbstractPerson's name
      * @param major Student's major
      */
     public Student(String name, String major){

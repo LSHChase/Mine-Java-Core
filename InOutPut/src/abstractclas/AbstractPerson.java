@@ -1,9 +1,9 @@
-package abstractClasses;
+package abstractclas;
 
-public abstract class Person {
+public abstract class AbstractPerson {
     private String name;
 
-    public Person(String name){
+    public AbstractPerson(String name){
         this.name = name;
     }
 

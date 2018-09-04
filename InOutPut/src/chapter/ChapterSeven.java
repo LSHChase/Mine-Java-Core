@@ -1,7 +1,8 @@
 package chapter;
 
-import someClass.ImageViewerFrame;
-import someClass.WindowsHandler;
+import commondata.MyConstant;
+import someclas.ImageViewerFrame;
+import someclas.WindowsHandler;
 
 import javax.swing.*;
 import java.awt.*;
@@ -66,21 +67,20 @@ public class ChapterSeven {
 
     public void useLog() throws IOException{
 //        Logger.getGlobal().setLevel(Level.OFF);
-        Logger.getGlobal().info("简单日志");
-        myLogger.setLevel(Level.INFO);
-        myLogger.log(Level.INFO, "企业级日志");
-
-        myLogger.entering("com.demo.InOutPut.chapter", "ChapterSeven", "entering");
-        IOException exception = new IOException("log.throwing");
-        myLogger.throwing("com.me.demo.InOutPut", "throw", exception);
-        throw exception;
+//        Logger.getGlobal().info("简单日志");
+//        myLogger.setLevel(Level.INFO);
+//        myLogger.log(Level.INFO, "企业级日志");
+//
+//        myLogger.entering("com.demo.InOutPut.chapter", "ChapterSeven", "entering");
+//        IOException exception = new IOException("log.throwing");
+//        myLogger.throwing("com.me.demo.InOutPut", "throw", exception);
+//        throw exception;
 
         if (null == System.getProperty("java.util.logging.config.class")
                 && null == System.getProperty("java.util.logging.config.file")){
             try{
                 Logger.getLogger("com.me.demo").setLevel(Level.ALL);
-                final int LOG_ROTATION_COUNT = 10;
-                Handler handler = new FileHandler("%h/myapp.log", 0 ,LOG_ROTATION_COUNT);
+                Handler handler = new FileHandler("%h/myapp.log", 0 , MyConstant.LOG_ROTATION_COUNT);
                 Logger.getLogger("").addHandler(handler);
             }
             catch (IOException e){

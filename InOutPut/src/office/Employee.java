@@ -4,9 +4,9 @@ import java.sql.Date;
 import java.time.LocalDate;
 import java.util.Objects;
 
-import abstractClasses.Person;
+import abstractclas.AbstractPerson;
 
-public class Employee extends Person implements Comparable<Employee>, Cloneable {
+public class Employee extends AbstractPerson implements Comparable<Employee>, Cloneable {
     //Instance fields
     //private String name;
     private double salary;
