@@ -7,11 +7,11 @@ import java.util.Date;
 import java.util.GregorianCalendar;
 import office.*;
 
-public class ChapterForth {
+public class Four {
 
     public static final double PI = 3.14159265358979323846;
 
-    public void useFunction(){
+    public void function(){
 
         //this.dateDefault();
         //this.localDate();

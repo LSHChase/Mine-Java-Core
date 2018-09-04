@@ -11,15 +11,15 @@ import java.io.IOException;
 import java.util.Scanner;
 import java.util.logging.*;
 
-public class ChapterSeven {
-    public void useFunction() {
+public class Seven {
+    public void function() {
 //        useExceptionStackTrace();
 //        useAssert();
         try{
             useLog();
 //            useHandler();
         }catch (IOException e){
-            myLogger.info("useFunction.log.throw");
+            myLogger.info("function.log.throw");
         }
     }
 
@@ -71,7 +71,7 @@ public class ChapterSeven {
 //        myLogger.setLevel(Level.INFO);
 //        myLogger.log(Level.INFO, "企业级日志");
 //
-//        myLogger.entering("com.demo.InOutPut.chapter", "ChapterSeven", "entering");
+//        myLogger.entering("com.demo.InOutPut.chapter", "Seven", "entering");
 //        IOException exception = new IOException("log.throwing");
 //        myLogger.throwing("com.me.demo.InOutPut", "throw", exception);
 //        throw exception;

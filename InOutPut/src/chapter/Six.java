@@ -9,8 +9,8 @@ import java.awt.event.ActionListener;
 import java.util.Arrays;
 import javax.swing.*;
 
-public class ChapterSixth {
-    public void useFunction() {
+public class Six {
+    public void function() {
 //        this.useSort();
 //        this.useDate();
         this.useClone();

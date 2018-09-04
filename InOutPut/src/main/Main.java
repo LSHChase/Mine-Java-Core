@@ -6,20 +6,23 @@ public class Main{
 
     public static void main(String args[]) {
 
-//       ChapterThird third = new ChapterThird();
-//       third.useFunction();
+//       Three third = new Three();
+//       third.function();
 //
-//       ChapterForth forth = new ChapterForth();
-//       forth.useFunction();
+//       Four forth = new Four();
+//       forth.function();
 //
-//        ChapterFifth fifth = new ChapterFifth();
-//        fifth.useFunction();
+//        Five fifth = new Five();
+//        fifth.function();
 
-//        ChapterSixth sixth = new ChapterSixth();
-//        sixth.useFunction();
+//        Six sixth = new Six();
+//        sixth.function();
 
-        ChapterSeven seven = new ChapterSeven();
-        seven.useFunction();
+//        Seven seven = new Seven();
+//        seven.function();
+
+        Eight eight = new Eight();
+        eight.function();
 
     }
 

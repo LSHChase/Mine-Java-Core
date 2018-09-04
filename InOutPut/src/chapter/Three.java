@@ -9,11 +9,11 @@ import java.util.Arrays;
 import java.util.Date;
 import java.util.Scanner;
 
-public class ChapterThird extends IOException{
+public class Three extends IOException{
 
     private Scanner in = new Scanner(System.in);
 
-    public void useFunction(){
+    public void function(){
 
         this .inputScanner();
         System.out.println("--------------------------------------------------------------------");

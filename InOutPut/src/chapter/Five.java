@@ -9,9 +9,9 @@ import schools.Student;
 import java.lang.reflect.Modifier;
 import java.util.*;
 
-public class ChapterFifth {
+public class Five {
 
-    public void useFunction(){
+    public void function(){
         //this.useMana();
         //this.useObject();
         //this.useHashCode();
@@ -21,7 +21,7 @@ public class ChapterFifth {
         //this.useVariPara();
         //this.useEnum();
        // this.useReflect();
-        //this.analysisClass();
+        this.analysisClass();
     }
 
     //Manager
