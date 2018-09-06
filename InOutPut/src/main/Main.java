@@ -7,29 +7,29 @@ import java.util.Scanner;
 
 public class Main{
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
 //        boolean cycle = true;
 //        boolean listCysle = true;
 
 //        while (cycle){
 //            if (listCysle) {
-                ArrayList<String> list = new ArrayList<>();
-                list.add("1.Chapter 3: !");
-                list.add("2.Chapter 4: !");
-                list.add("3.Chapter 5: !");
-                list.add("5.Chapter 6: !");
-                list.add("5.Chapter 7: !");
-                list.add("6.Chapter 8: !");
-                for (String chapter : list) {
-                    System.out.println(chapter);
-                }
+//                ArrayList<String> list = new ArrayList<>();
+//                list.add("1.Chapter 3: !");
+//                list.add("2.Chapter 4: !");
+//                list.add("3.Chapter 5: !");
+//                list.add("5.Chapter 6: !");
+//                list.add("5.Chapter 7: !");
+//                list.add("6.Chapter 8: !");
+//                for (String chapter : list) {
+//                    System.out.println(chapter);
+//                }
 //            }
-
-            Scanner in = new Scanner(System.in);
-            int select = 0;
-            System.out.println("Please select chapter: ");
-            select = in.nextInt();
-            switch (select){
+//
+//            Scanner in = new Scanner(System.in);
+//            int select = 0;
+//            System.out.println("Please select chapter: ");
+//            select = in.nextInt();
+            switch (6){
                 case 0:
 //                    cycle = false;
                     break;
