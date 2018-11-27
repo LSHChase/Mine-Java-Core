@@ -26,7 +26,7 @@ public class Start{
 //            int select = 0;
 //            System.out.println("Please select chapter: ");
 //            select = in.nextInt();
-            switch (8){
+            switch (9){
                 case 0:
 //                    cycle = false;
                     break;
@@ -53,6 +53,10 @@ public class Start{
                 case 8:
                     Eight eight = new Eight();
                     eight.function();
+                    break;
+                case 9:
+                    Nine nine = new Nine();
+                    nine.mainfunction();
                     break;
                 default:
                     System.out.println("This Chapter does not exit!");
