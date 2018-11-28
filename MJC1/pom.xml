@@ -10,6 +10,9 @@
     <description>A maven project for studying java core code 1</description>
 
     <build>
+        <sourceDirectory>/src/main/java</sourceDirectory>
+        <outputDirectory>/out</outputDirectory>
+        <directory>/directory</directory>
         <plugins>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
