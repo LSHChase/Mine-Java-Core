@@ -1,0 +1,27 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.chase.mjc</groupId>
+    <artifactId>mine-java-core-1</artifactId>
+    <version>1.0.0</version>
+    <packaging>jar</packaging>
+    <name>Mine-Java-core-1</name>
+    <description>A maven project for studying java core code 1</description>
+
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+    </dependencies>
+
+</project>
