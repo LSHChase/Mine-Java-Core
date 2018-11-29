@@ -1,4 +1,4 @@
-package com.me.demo.mjc1.mjc2;
+package com.me.demo.mjc2;
 
 public class Start{
 

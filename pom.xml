@@ -2,23 +2,33 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <parent>
-        <artifactId>mine-java-core</artifactId>
-        <groupId>com.chase.java-core</groupId>
-        <version>1.0.0</version>
-    </parent>
+
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>mine-java-core-1</artifactId>
-    <packaging>jar</packaging>
-    <name>Mine-Java-core-1</name>
+    <groupId>com.chase.java-core</groupId>
+    <artifactId>mine-java-core</artifactId>
+    <version>1.0.0</version>
+    <packaging>pom</packaging>
+    <name>Mine-Java-core</name>
     <description>A maven project for studying java core code 1</description>
 
+    <modules>
+        <module>MJC1</module>
+        <module>MJC2</module>
+        <module>test</module>
+    </modules>
+
     <build>
-        <sourceDirectory>src/main/java</sourceDirectory>
         <outputDirectory>out</outputDirectory>
         <directory>directory</directory>
         <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 

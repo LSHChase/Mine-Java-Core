@@ -9,20 +9,33 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>mine-java-core-1</artifactId>
-    <packaging>jar</packaging>
-    <name>Mine-Java-core-1</name>
-    <description>A maven project for studying java core code 1</description>
+    <artifactId>test</artifactId>
 
     <build>
         <sourceDirectory>src/main/java</sourceDirectory>
         <outputDirectory>out</outputDirectory>
         <directory>directory</directory>
         <plugins>
+
         </plugins>
     </build>
 
     <dependencies>
+        <dependency>
+            <groupId>com.chase.java-core</groupId>
+            <artifactId>mine-java-core-1</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.chase.java-core</groupId>
+            <artifactId>mine-java-core-2</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+        </dependency>
     </dependencies>
 
 </project>
