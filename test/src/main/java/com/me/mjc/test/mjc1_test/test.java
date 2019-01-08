@@ -9,6 +9,6 @@ public class test {
     @Test
     public void test1st(){
         Nine nine = new Nine();
-        nine.mainfunction();
+        nine.function();
     }
 }

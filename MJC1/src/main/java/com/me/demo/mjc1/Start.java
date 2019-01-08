@@ -56,7 +56,7 @@ public class Start{
                     break;
                 case 9:
                     Nine nine = new Nine();
-                    nine.mainfunction();
+                    nine.function();
                     break;
                 default:
                     System.out.println("This Chapter does not exit!");

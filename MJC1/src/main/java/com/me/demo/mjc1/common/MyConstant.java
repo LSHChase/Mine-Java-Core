@@ -1,5 +1,7 @@
 package com.me.demo.mjc1.common;
 
+import com.me.demo.mjc1.entity.office.Employee;
+
 import java.util.Collection;
 import java.util.List;
 
@@ -11,6 +13,7 @@ public class MyConstant {
         list.add("student");
         list.add("teacher");
         list.add("manager");
+        list.add("book");
         list.add("employee");
         list.add("employer");
         list.add("book");
@@ -18,11 +21,14 @@ public class MyConstant {
         list.add("writer");
         list.add("product");
         list.add("introduction");
+        list.add("Book");
         list.add("boy");
         list.add("girl");
         list.add("father");
+        list.add("book");
         list.add("phone");
         list.add("computer");
+        list.add("eBook");
         list.add("bye");
         return list;
     }
