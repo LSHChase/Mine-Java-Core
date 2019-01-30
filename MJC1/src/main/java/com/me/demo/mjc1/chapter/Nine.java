@@ -18,7 +18,8 @@ public class Nine {
 //        useHashMap();
 //        useWeakHashMap();
 //        useLinkedHashSetAndMap();
-        useEnumSetAndMap();
+//        useEnumSetAndMap();
+        useViewAndWrapper();
     }
 
     //list迭代器
@@ -228,5 +229,17 @@ public class Nine {
     }
     enum WeekDay {SUNDAY, MONDAY, TUESDAT,WEDNESDAY, THURSDAY, FRIDAY, SATURDAY};
 
+    /**
+     * 视图和包装器
+     */
+    private void useViewAndWrapper(){
+        //视图接受后不可更改大小
+        List<String> listString = new ArrayList<>();
+        MyConstant.addFakeDataOne(listString);
+        String[] lists = (String[]) listString.toArray();
+        List<String> listsss = Arrays.asList(lists);
+        listsss.add("222");
+        System.out.println(listsss);
+    }
     //TODO:9.4
 }
